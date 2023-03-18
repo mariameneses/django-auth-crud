@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html'%}
+
+{% load static %}
+
+{% block content %}
+<main class="container py-5">
+
+    <section class="card card-body">
+        <h1 class="display-1 text-center">{{ title }}</h1>
+        
+        <img src="{% static 'maria-jose.jpg' %}" alt="" width="100">
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, veritatis iure et, molestiae eaque, expedita laboriosam quia sapiente odit repudiandae omnis dolorem aspernatur iusto ratione in magni cum debitis totam?</p>
+
+        <div class="text-center">
+            <a class="btn btn-primary" href="{% url 'sign_in' %}">
+                Sign in
+            </a>
+            <a class="btn btn-dark" href="{% url 'sign_up' %}">
+                Sign up
+            </a>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}
